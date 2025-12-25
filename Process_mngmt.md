@@ -192,3 +192,27 @@
 ### 52. How to ensure uniqueness of child process IDs?
 **Answer:** Kernel ensures unique PIDs. `/proc/sys/kernel/pid_max` defines upper bound.
 
+---
+
+## 53. What is a PCB (Process Control Block)?
+The **PCB** is a data structure maintained by the kernel for every process.  
+It contains:
+
+- PID (Process ID)  
+- Process state (Running, Ready, Waiting, etc.)  
+- CPU registers and program counter  
+- Scheduling info (priority, timeslices)  
+- Memory mappings (page tables)  
+- File descriptor table  
+- Accounting info (CPU usage, runtime, etc.)
+
+---
+
+## 54. What are process states in Linux?
+- **Running (R)** – executing or ready to execute  
+- **Sleeping (S)** – waiting for an event or I/O  
+- **Disk Sleep (D)** – uninterruptible sleep  
+- **Stopped (T)** – paused (e.g., by SIGSTOP)  
+- **Zombie (Z)** – finished but not yet reaped  
+- **Dead (X)** – completely terminated  
+
