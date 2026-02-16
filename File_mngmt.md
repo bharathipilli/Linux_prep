@@ -43,14 +43,13 @@ A file descriptor (FD) is a non-negative integer returned by open() used to acce
 
 2 → stderr
 
----
+
 
 ## 4️⃣ Difference between file descriptor and file pointer?
 File Descriptor	File Pointer
 Integer value	FILE *
 Used in system calls	Used in stdio functions
 No buffering	Buffered
----
 
 ## 5️⃣ What happens internally when we open a file?
 
@@ -113,11 +112,11 @@ lseek(fd, 0, SEEK_SET);  // move to beginning
 
 Buffering temporarily stores data in memory before writing to disk to reduce system calls.
 
-1️⃣1️⃣ What is a sparse file?
+## 1️⃣1️⃣ What is a sparse file?
 
 A file that has empty blocks (holes) not physically stored on disk but logically present.
 
-1️⃣2️⃣ What is file permission in Linux?
+## 1️⃣2️⃣ What is file permission in Linux?
 
 Three types:
 
@@ -137,20 +136,20 @@ Others
 
 Example: rwxr-xr--
 
-1️⃣3️⃣ What is umask?
+## 1️⃣3️⃣ What is umask?
 
 umask sets default permission bits when creating new files.
 
-1️⃣4️⃣ What is VFS?
+## 1️⃣4️⃣ What is VFS?
 
 Virtual File System layer provides a common interface to different filesystems (ext4, ntfs, etc.).
 
-1️⃣5️⃣ What is difference between character and block device?
+## 1️⃣5️⃣ What is difference between character and block device?
 Character Device	Block Device
 Data byte by byte	Data in blocks
 No buffering	Uses buffer cache
 Example: keyboard	Example: hard disk
-1️⃣6️⃣ What is a hard link?
+## 1️⃣6️⃣ What is a hard link?
 
 Points to same inode
 
@@ -158,7 +157,7 @@ Shares same data
 
 Cannot link directories
 
-1️⃣7️⃣ What is a soft link (symbolic link)?
+## 1️⃣7️⃣ What is a soft link (symbolic link)?
 
 Points to filename
 
@@ -166,7 +165,7 @@ Has different inode
 
 Can link directories
 
-1️⃣8️⃣ What happens if two processes write to same file?
+## 1️⃣8️⃣ What happens if two processes write to same file?
 
 Data may interleave
 
