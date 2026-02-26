@@ -216,3 +216,5 @@ It contains:
 - **Zombie (Z)** – finished but not yet reaped  
 - **Dead (X)** – completely terminated  
 
+MOCK Questions and Answers :
+
